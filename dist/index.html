@@ -3,12 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Speakers page</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
   <header>
+    <nav>
+      <ul>
+        <li><a href="#">Logo</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Search</a></li> <!--c'est un form avec input et un btn-->
+      </ul>
+    </nav>
   </header>
+  <main>
+    <section class="speaker_banner">
+      <a href="#">Speakers</a>
+      <h1>Speaker Edition 2023</h1>
+      <p>Discover the speakers and the topics or suggest your own topic for our next event</p>
+    </section>
+
+    <section class="speaker_section">
+      <h2>Speakers section</h2>
+      <section class="speaker_card">
+        <picture class="card__pict">
+          <img class="card__img" src="./image/SpeakersPicture/chris@3x.jpg" alt="Chris Coyier">
+          </picture>
+          <h2 class="card__orator"> <strong class="card__name">Chris Coyier</strong></h2>
+          <p class="card__location">Milwaukee, WI</p>
+            <h3 class="card__topic"><strong>The All-Powerful Front-End Developer</strong></h3>
+          <p class="card__description">Without servers, we'd have no way to share our creations with the world</p>
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/sara@3x.jpg" alt="Sara Soueidan">
+        </picture>
+        <h2 class="card__orator"> <strong class="card__name">Sara Soueidan </strong></h2>
+        <p class="card__location">Lebanon</p>
+        <h3 class="card__topic"><strong>Going Offline</strong></h3>
+        <p class="card__description">You can re-visit my Web site even when you’re not connected to the Internet</p>
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/sara@3x.jpg" alt="Sara Soueidan">
+        </picture>
+        <h2 class="card__orator"> <strong class="card__name">Sara Soueidan </strong></h2>
+        <p class="card__location">Lebanon</p>
+        <h3 class="card__topic"><strong>Going Offline</strong></h3>
+        <p class="card__description">You can re-visit my Web site even when you’re not connected to the Internet</p>
+  </section>
+
+    </section>
+    <section class="speaker_form">
+      <form>
+        <h2>Become speaker</h2>
+        <p>Do you have a topic that you like?
+          Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords
+        </p>
+        <div>
+          <label for="name">Name*</label>
+          <input type="text" name="name" required>
+        </div>
+        <div>
+          <label for="mail">Mail*</label>
+          <input type="text" name="mail" required>
+        </div>
+        <div>
+          <label for="subject">Your Subject*</label>
+          <input type="text" name="subject" required>
+        </div>
+        <div>
+          <label for="keywords">Keywords*(separate by comma)</label>
+          <input type="text" name="keywords" required>
+        </div>
+          <input type="txt" name="short_details" required placeholder="Short Details*">
+        </fieldset>
+        <div>
+          <input type="submit" value="Send your subject">
+          <p>or just participate to the present event ...</p>
+        </div>
+      </form>
+      <div>
+        <label for="get_ticket">$199 USD</label>
+        <input type="button" name="get_ticket" value="Get ticket">
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div>
+      <span>The Las Vegas Convention Center</span>
+      <p>3150 Paradise Rd, Las Vegas, NV 89109
+      The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses approximately 3.2 million square feet with exhibit space of 2 million square feet and meeting space of nearly 250,000 square feet.
+    </p></div>
+    <div>
+      <span>Sponsors</span>
+      <ul>
+        <li>Cisco</li>
+        <li>Amazon Web Services</li>
+        <li>Nickelodeon</li>
+        <li>Meetup</li>
+        <li>Stripe</li>
+        <li>MailChimp</li>
+      </ul>
+    </div>
+    <div>
+      <ul>      <li><span>Follow us</span></li>
+        <li>(twitter logo)
+          twitter: @codeconf2023
+          </li>
+          <li>(Slack logo)
+            slack channel: #codeconf2023
+          </li></ul>
+    </div>
+    <div>
+      Helpdesk Call-center</span>
+      <span class="footer_bold">+1 702-892-0711 </span> (speaker’s support)
+    </div>
+    <div>
+      <p class="footer_bold">organised by WebeesMeetups.com</p>
+      <p>©copyright</p>
+    </div>
+</footer>
   
 </body>
 </html>
