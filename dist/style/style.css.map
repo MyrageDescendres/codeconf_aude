@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../src/style/_webfonts.scss","../../src/style/style.scss"],"names":[],"mappings":"AAAA;EACE;EACA,KACE;;AAIJ;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;;ACdF;EACE;;;AAGF;EACE","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../../src/style/_webfonts.scss","../../src/style/style.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAEF;AAAA;AAAA;AAAA;AAAA;AAMA;EACE;EACA;EACA;;AClBF;EACE;;;AAGF;EACE","file":"style.css"}
