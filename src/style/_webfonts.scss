@@ -5,13 +5,6 @@
 }/*# sourceMappingURL=style.css.map*/
 
 /*@font-face {
-  font-family: 'icon';
-  src: url('./style/webfonts/codeconf-all/fonts/codeconf.woff') format("woff");
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}*/
-/*@font-face {
   font-family: 'museo';
   src: url("./style/webfonts/museo/museo300.woff") format("woff");
   src: url("./style/webfonts/museo/museo500.woff") format("woff");
@@ -59,7 +52,7 @@
 .icon-loop:before {
   content: "\e940";
     padding: 0.5rem;
-  color: red;
+    color: red;
 }
 .icon-contact:before {
   content: "\e941";
