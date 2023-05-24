@@ -1,3 +1,23 @@
+header {
+  background: red;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+
+.logo-codeconf {
+  display: inline-flex;
+}
+
 @font-face {
   font-family: "maven_Pro";
   src: url("./style/webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
@@ -21,9 +41,21 @@
   font-variation-settings: "wght" 400, "wght" 900;
 }
 .speaker_section {
-  background: rgb(119, 68, 68);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  max-width: 60rem;
+  border: 1px solid rgb(119, 68, 68);
+  margin: 0 auto;
 }
 
 .speaker_card {
-  background: grey;
+  border-color: 1px solid grey;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  align-self: end;
 }/*# sourceMappingURL=style.css.map */

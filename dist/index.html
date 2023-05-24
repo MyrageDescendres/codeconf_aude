@@ -10,12 +10,15 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Logo</a></li>
+        <li><a href="#"><img class="logo-codeconf" src="./image/logos/logo2023.svg" alt="logo-codeconf""></a></li>
         <li><a href="#">Schedule</a></li>
+        <span class="menu_separator">|</span>
         <li><a href="#">Events</a></li>
+        <span class="menu_separator">|</span>
         <li><a href="#">Team</a></li>
+        <span class="menu_separator">|</span>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Search</a></li> <!--c'est un form avec input et un btn-->
+        <li><input type="txt" name="search" required placeholder="Search"></li> <!--c'est un form avec input et un btn-->
       </ul>
     </nav>
   </header>
@@ -25,9 +28,9 @@
       <h1>Speaker Edition 2023</h1>
       <p>Discover the speakers and the topics or suggest your own topic for our next event</p>
     </section>
-
-    <section class="speaker_section">
-      <h2>Speakers section</h2>
+    
+  <h2>Speakers section</h2>
+  <span class="speaker_section">
       <section class="speaker_card">
         <picture class="card__pict">
           <img class="card__img" src="./image/SpeakersPicture/chris@3x.jpg" alt="Chris Coyier">
@@ -36,6 +39,9 @@
           <p class="card__location">Milwaukee, WI</p>
             <h3 class="card__topic"><strong>The All-Powerful Front-End Developer</strong></h3>
           <p class="card__description">Without servers, we'd have no way to share our creations with the world</p>
+          <p class="card__time">09:30 AM</p>
+          <span class="card__room">R1</span>
+          <input class="btn__about" type="button" name="About" value="About">
     </section>
     <section class="speaker_card">
       <picture class="card__pict">
@@ -45,6 +51,9 @@
         <p class="card__location">Lebanon</p>
         <h3 class="card__topic"><strong>Going Offline</strong></h3>
         <p class="card__description">You can re-visit my Web site even when you’re not connected to the Internet</p>
+        <p class="card__time">10:15 AM</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
     </section>
     <section class="speaker_card">
       <picture class="card__pict">
@@ -54,6 +63,9 @@
         <p class="card__location">Cleveland, OH</p>
         <h3 class="card__topic"><strong>Faux Grid Tracks</strong></h3>
         <p class="card__description">Is it possible to style the rows and columns of a [CSS] grid—the grid itself?</p>
+        <p class="card__time">04:00 PM</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
     </section>
     <section class="speaker_card">
       <picture class="card__pict">
@@ -63,6 +75,9 @@
         <p class="card__location">Cambridge, MA</p>
         <h3 class="card__topic"><strong>Mavo</strong></h3>
         <p class="card__description">New approachable way to create Web applications</p>
+        <p class="card__time">04:00 PM</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
     </section>
     <section class="speaker_card">
       <picture class="card__pict">
@@ -73,9 +88,100 @@
         <h3 class="card__topic"><strong>655 Frustrations Doing Data Visualization</strong></h3>
         <p class="card__description">Visualization teams spend more time visualizing than those on embedded teams</p>
         <p class="card__time">09:30 AM</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
     </section>
-
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Shirley Wu">
+        </picture>
+        <h2 class="card__orator"> <strong class="card__name">Shirley Wu</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+        <h3 class="card__topic"><strong>655 Frustrations Doing Data Visualization</strong></h3>
+        <p class="card__description">Visualization teams spend more time visualizing than those on embedded teams</p>
+        <p class="card__time">09:30 AM</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
     </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Luke Wrobleswki">
+        </picture>
+        <h2 class="card__orator"> <strong class="card__name">Luke Wrobleswki</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+        <h3 class="card__topic"><strong>The Way of the Web</strong></h3>
+        <p class="card__description">Science fiction is not about predicting the future, but about what we need to have a future</p>
+        <p class="card__time">11:30 am</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Nicolas Gallagher"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Nicolas Gallagher</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+        <h3 class="card__topic"><strong>Making SVG icon libraries for React apps</strong></h3>
+        <p class="card__description">Using SVG is currently the best way to create icon libraries for apps</p>
+        <p class="card__time">02:00 pm</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Rachel Andrew"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Rachel Andrew</strong></h2>
+        <p class="card__location">Bristol, UK</p>
+        <h3 class="card__topic"><strong>Making Things Better</strong></h3>
+        <p class="card__description">Redefining the Technical Possibilities of CSS</p>
+        <p class="card__time">03:00 pm</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Stephen Hay"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Stephen Hay</strong></h2>
+        <p class="card__location">Leeuwarden, NL</p>
+        <h3 class="card__topic"><strong>Zero interface thinking</strong></h3>
+        <p class="card__description">Everything we introduce has the potential to ruin everything. Ask: Is this absolutely necessary?</p>
+        <p class="card__time">05:00 pm</p>
+        <span class="card__room">R1</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Paul Irish"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Paul Irish</strong></h2>
+        <p class="card__location">Palo Alto, CA</p>
+        <h3 class="card__topic"><strong>Developer Tooling, lighthouse</strong></h3>
+        <p class="card__description">Auditing, performance metrics, and best practices for Progressive Web Apps</p>
+        <p class="card__time">10:30 am</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Nicole Sullivan"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Nicole Sullivan</strong></h2>
+        <p class="card__location">San Francisco, CA</p>
+        <h3 class="card__topic"><strong>OOCSS code standards</strong></h3>
+        <p class="card__description">Code conventions are important for the long-term maintainability of code</p>
+        <p class="card__time">11:30 am</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+    <section class="speaker_card">
+      <picture class="card__pict">
+        <img class="card__img" src="./image/SpeakersPicture/shirley@3x.jpg" alt="Brad Frost"></picture>
+        <h2 class="card__orator"> <strong class="card__name">Brad Frost</strong></h2>
+        <p class="card__location">Pittsburgh, PA.</p>
+        <h3 class="card__topic"><strong>Atomic Design</strong></h3>
+        <p class="card__description">We can construct design systems in a more methodical way</p>
+        <p class="card__time">02:00 pm</p>
+        <span class="card__room">R2</span>
+        <input class="btn__about" type="button" name="About" value="About">
+    </section>
+  </span>
     <section class="speaker_form">
       <form>
         <h2>Become speaker</h2>
