@@ -1,21 +1,26 @@
-header {
-  background: red;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.menu {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-family: maven_Pro;
+}
+
+.menu_logo {
+  margin-inline-end: auto;
 }
 
 ul li {
   list-style: none;
-  display: inline-flex;
-  flex-direction: row;
 }
 
 a {
   text-decoration: none;
   color: rgb(39, 39, 39);
-}
-
-.logo-codeconf {
-  display: inline-flex;
 }
 
 @font-face {
