@@ -2,6 +2,22 @@
   font-family: "codeconf";
   src: url("fonts/codeconf.ttf") format("truetype"), url("fonts/codeconf.woff") format("woff");
 }
-body {
-  background: red;
+@font-face {
+  font-family: "maven_Pro";
+  src: url("./style/webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
+  font-variation-settings: "wght" 400, "wght" 900;
+} 
+@font-face {
+  font-family: "icon";
+  src: url("./style/webfonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.speaker_section {
+  background: rgb(119, 68, 68);
+}
+
+.speaker_card {
+  background: grey;
 }/*# sourceMappingURL=style.css.map */

@@ -4,3 +4,17 @@
     url('fonts/codeconf.ttf') format('truetype'),
     url('fonts/codeconf.woff') format('woff');
 }
+
+@font-face {
+  font-family : 'maven_Pro';
+  src : url("./style/webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
+  font-variation-settings: "wght"400, "wght"900;
+}/*# sourceMappingURL=style.css.map*/
+
+@font-face {
+  font-family: 'icon';
+  src: url('./style/webfonts/codeconf-all/fonts/codeconf.woff') format("woff");
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

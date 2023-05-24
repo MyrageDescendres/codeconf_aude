@@ -2,7 +2,10 @@
 @import "_webfonts.scss";
 @import "_footer.scss";
 
+.speaker_section {
+  background: rgb(119, 68, 68);
+}
 
-body{
-  background: red;
+.speaker_card {
+  background: grey;
 }
