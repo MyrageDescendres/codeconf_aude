@@ -3,18 +3,55 @@
 }
 footer {
   display: grid;
-  grid-template-columns: 6 (1fr);
+  grid-template-columns: repeat(auto-fit, minmax(6rem,16rem));
   background-color: #343237;
+  margin: auto;
   color: $txt_color;
+  border: 1px solid rgb(255, 105, 218);
 }
-.logo_sponsor {
+
+.footer_txt {
+  grid-column: 2/6;
+  grid-row: 1/1;
+}
+
+.footer_img { //en cours d'ajustement
+  grid-column: 6/6;
+  grid-row: 1/1;
+  min-width: 4rem;
+  width: 20%;
+  max-width: 2rem;
+  block-size: auto;
+}
+
+.footer_sponsor {
+  grid-column: 2/6;
+  grid-row: 2/2;
   background-color: black;
   border-radius: 1rem;
 }
-.follow_us {
-  grid-column: 3/6;
+
+.footer_sponsor ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer_follow_us {
+  grid-column: 2/2;
+  grid-row: 3/3;
   display: flex;
   flex-direction: row;
   border: 1px solid rgb(248, 244, 238);
   border-radius: 1rem;
+}
+
+.footer_helpdesk {
+  grid-column: 3/6;
+  grid-row: 3/3;
+}
+
+.footer_copyright {
+  grid-column: 6/6;
+  grid-row: 3/3;
 }
