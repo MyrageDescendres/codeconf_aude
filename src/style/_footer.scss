@@ -3,9 +3,9 @@
 }
 footer {
   display: grid;
-  grid-template-columns: 6 (2fr);
-  background-color: rgb(35, 35, 35);
-  color: rgb(248, 244, 238);
+  grid-template-columns: 6 (1fr);
+  background-color: #343237;
+  color: $txt_color;
 }
 .logo_sponsor {
   background-color: black;

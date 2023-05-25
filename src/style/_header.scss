@@ -25,3 +25,11 @@ a {
 i{
   font-family: "codeconf", "sans-serif";
 }
+
+.menu_separator::after {
+  border: 1px solid red;
+}
+
+.icon-loop_off {
+  opacity: 0;
+}
