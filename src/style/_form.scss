@@ -4,3 +4,23 @@
   margin: auto;
   border: 1px solid rgb(5, 153, 158);
 }
+
+.btn_form {
+  font-family: 'maevo';
+  font-size: 1rem;
+  padding: 0.7rem;
+  border: 2px solid $orange_color;
+  border-radius: 1rem;
+  text-decoration-style: none;
+  background-color: white;
+}
+
+.btn_ticket {
+  font-family: 'maevo';
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  text-decoration-style: none;
+  background-color: $orange_color;
+  padding: 0.7rem;
+}
