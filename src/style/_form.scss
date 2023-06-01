@@ -1,22 +1,47 @@
 .speaker_form {
+    font-family: 'league spartan';
+    margin: 0 auto;
+    max-width: 50rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+    border: 1px solid rgb(5, 153, 158);
+  }
+form {
+  display: block;
+  font-family: 'leaguespartan';
+}
+
+form h2{
+  font-family:'maven_Pro';
+  color:#644FE8;
+  text-transform: uppercase;
+
+}
+.form_txt {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem,20rem));
   margin: auto;
-  border: 1px solid rgb(5, 153, 158);
+}
+.form_input {
+  display: grid;
+  max-width: 40rem;
 }
 
 .btn_form {
-  font-family: 'maevo';
+  font-family: 'maven_Pro';
   font-size: 1rem;
   padding: 0.7rem;
   border: 2px solid $orange_color;
+  color: $orange_color;
   border-radius: 1rem;
   text-decoration-style: none;
   background-color: white;
 }
 
 .btn_ticket {
-  font-family: 'maevo';
+  font-family: 'maven_Pro';
   font-size: 1rem;
   border: none;
   border-radius: 1rem;

@@ -24,10 +24,6 @@ a {
   color: rgb(39, 39, 39);
 }
 
-i {
-  font-family: "codeconf", "sans-serif";
-}
-
 .menu_separator::after {
   border: 1px solid red;
 }
@@ -41,15 +37,29 @@ i {
   src: url("./webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
   font-variation-settings: "wght" 400, "wght" 900;
 } 
-/*@font-face {
-  font-family: 'museo';
-  src: url("./style/webfonts/museo/museo300.woff") format("woff");
-  src: url("./style/webfonts/museo/museo500.woff") format("woff");
-}`*/
 @font-face {
   font-family: "leaguespartan";
   src: url("./webfonts/leaguespartan/LeagueSpartanVariable.ttf") format("truetype-variations");
   font-variation-settings: "wght" 400, "wght" 900;
+}
+/* museo */
+@font-face {
+  font-family: "museo";
+  src: url("museo/museo300.woff2") format("woff2"), url("museo/museo300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("museo/museo500.woff2") format("woff2"), url("museo/museo500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo";
+  src: url("museo/museo700.woff2") format("woff2"), url("museo/museo700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: "codeconf";
@@ -98,6 +108,8 @@ i {
 
 .icon-home:before {
   content: "\e943";
+  padding: 0.1rem;
+  color: #F74D1C;
 }
 
 .icon-card:before {
@@ -208,8 +220,7 @@ footer {
 
 /*Speaker_Banner*/
 .speaker_banner {
-  border: 1px solid #888;
-  background-color: #6B57EA;
+  background-color: #644FE8;
   display: grid;
   grid-template-columns: repeat auto-fit, 4, 1fr;
   grid-template-rows: repeat 1, 1fr;
@@ -251,6 +262,9 @@ footer {
   max-width: 75rem;
   border: 1px solid rgb(255, 1, 1);
   margin: auto;
+  justify-content: start;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .speaker_section {
@@ -269,6 +283,17 @@ footer {
   color: #343237;
 }
 
+.card__name {
+  color: #644FE8;
+  font-size: x-large;
+  display: grid;
+  margin-left: 5%;
+}
+
+.card__location {
+  margin-left: 5%;
+}
+
 .card__img {
   object-fit: contain;
   width: 100%;
@@ -279,24 +304,51 @@ footer {
 }
 
 .speaker_form {
+  font-family: "league spartan";
+  margin: 0 auto;
+  max-width: 50rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
-  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+  align-items: center;
   border: 1px solid rgb(5, 153, 158);
 }
 
+form {
+  display: block;
+  font-family: "leaguespartan";
+}
+
+form h2 {
+  font-family: "maven_Pro";
+  color: #644FE8;
+  text-transform: uppercase;
+}
+
+.form_txt {
+  display: grid;
+  margin: auto;
+}
+
+.form_input {
+  display: grid;
+  max-width: 40rem;
+}
+
 .btn_form {
-  font-family: "maevo";
+  font-family: "maven_Pro";
   font-size: 1rem;
   padding: 0.7rem;
   border: 2px solid #F74D1C;
+  color: #F74D1C;
   border-radius: 1rem;
   text-decoration-style: none;
   background-color: white;
 }
 
 .btn_ticket {
-  font-family: "maevo";
+  font-family: "maven_Pro";
   font-size: 1rem;
   border: none;
   border-radius: 1rem;
@@ -316,4 +368,235 @@ footer {
 body {
   font-family: "maven_Pro";
   margin: 0;
+}
+
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+/*button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	//-webkit-appearance: button;
+}/*
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
 }/*# sourceMappingURL=style.css.map */

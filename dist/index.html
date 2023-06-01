@@ -12,11 +12,15 @@
       <ul class="menu">
         <li class="menu_logo"><a href="#"><img src="./image/logos/logo2023.svg" alt="menu_logo"></a></li>
         <li class="menu_separator"><a href="#">Events</a></li>
+        <span class="menu_vBar">|</span>
         <li class="menu_separator"><a href="#">Speakers</a></li>
+        <span class="menu_vBar">|</span>
         <li class="menu_separator"><a href="#">Team</a></li>
+        <span class="menu_vBar">|</span>
         <li><a href="#">Contact</a></li>
-        <li class="menu_schedule"><i class="icon-schedule"></i><a href="#">Schedule</a></li>
-        <li class="menu_search"><i class="icon-loop"></i><input type="txt" name="search" required placeholder="Search" class="icon-loop_off"></li> <!--c'est un form avec input et un btn-->
+        <span class="menu_vBar">|</span>
+        <li class="menu_schedule"><span class="icon icon-schedule"></span><a href="#">Schedule</a></li>
+        <li class="menu_search icon icon-loop"><input type="txt" name="search" required placeholder="Search" class="icon-loop_off"></li> <!--c'est un form avec input et un btn-->
       </ul>
     </nav>
   </header>
@@ -24,30 +28,30 @@
     <section class="speaker_banner">
       <img class="speaker_banner_img" src=".\image\SpeakersPicture\presents@3x.png" alt="Présentation_Speaker">
       <h1 class="speaker_banner_h1">Speaker Edition 2023</h1>
-      <p class="speaker_banner_txt">Discover the speakers and the topics or suggest <span>your own topic for our next event</span></p>
+      <p class="speaker_banner_txt">Discover the speakers and the topics or suggest<span>your own topic for our next event</span></p>
     </section>
     
-  <h2 class="speaker_arianne">Speakers</h2>
+  <h2 class="speaker_arianne"><span class="arianne_txt"><span class="icon icon-home">| Speakers</span></span></h2>
   <span class="speaker_section">
       <section class="speaker_card">
         <picture class="card__pict">
           <img class="card__img" src="./image/SpeakersPicture/chris@3x.jpg" alt="Chris Coyier">
           </picture>
-          <h2 class="card__orator"> <strong class="card__name">Chris Coyier</strong></h2>
-          <p class="card__location">Milwaukee, WI</p>
-          <div class="card_informations">
-            <h3 class="card__topic"><strong>The All-Powerful Front-End Developer</strong></h3>
-            <p class="card__description">Without servers, we'd have no way to share our creations with the world</p>
-            <p class="card__time">09:30 AM</p>
-            <span class="card__room">R1</span>
-            <input class="btn__about" type="button" name="About" value="About">
-          </div>
+            <h2 class="card__name">Chris<strong>Coyier</strong></h2>
+            <p class="card__location">Milwaukee, WI</p>
+            <div class="card_informations">
+              <h3 class="card__topic"><strong>The All-Powerful Front-End Developer</strong></h3>
+              <p class="card__description">Without servers, we'd have no way to share our creations with the world</p>
+              <p class="card__time">09:30 AM</p>
+              <span class="card__room">R1</span>
+              <input class="btn__about" type="button" name="About" value="About">
+            </div>
     </section>
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src="./image/SpeakersPicture/sara@3x.jpg" alt="Sara Soueidan">
         </picture>
-        <h2 class="card__orator"> <strong class="card__name">Sara Soueidan </strong></h2>
+        <h2 class="card__name">Sara<strong>Soueidan</strong></h2>
         <p class="card__location">Lebanon</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Going Offline</strong></h3>
@@ -61,7 +65,7 @@
       <picture class="card__pict">
         <img class="card__img" src="./image/SpeakersPicture/eric@3x.jpg" alt="Eric Meyer">
         </picture>
-        <h2 class="card__orator"> <strong class="card__name">Éric Meyer </strong></h2>
+        <h2 class="card__name">Éric<strong>Meyer</strong></h2>
         <p class="card__location">Cleveland, OH</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Faux Grid Tracks</strong></h3>
@@ -75,7 +79,7 @@
       <picture class="card__pict">
         <img class="card__img" src="./image/SpeakersPicture/lea@3x.jpg" alt="Lea Verou">
         </picture>
-        <h2 class="card__orator"> <strong class="card__name">Lea Verou</strong></h2>
+        <h2 class="card__name">Lea<strong>Verou</strong></h2>
         <p class="card__location">Cambridge, MA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Mavo</strong></h3>
@@ -89,7 +93,7 @@
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\shirley@3x.jpg" alt="Shirley Wu">
         </picture>
-        <h2 class="card__orator"> <strong class="card__name">Shirley Wu</strong></h2>
+        <h2 class="card__name">Shirley<strong>Wu</strong></h2>
         <p class="card__location">San Francisco, CA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>655 Frustrations Doing Data Visualization</strong></h3>
@@ -103,7 +107,7 @@
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\luke@3x.jpg" alt="Luke Wrobleswki">
         </picture>
-        <h2 class="card__orator"> <strong class="card__name">Luke Wrobleswki</strong></h2>
+        <h2 class="card__name">Luke<strong>Wrobleswki</strong></h2>
         <p class="card__location">San Francisco, CA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>The Way of the Web</strong></h3>
@@ -116,7 +120,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\nico@3x.jpg" alt="Nicolas Gallagher"></picture>
-        <h2 class="card__orator"> <strong class="card__name">Nicolas Gallagher</strong></h2>
+        <h2 class="card__name">Nicolas<strong>Gallagher</strong></h2>
         <p class="card__location">San Francisco, CA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Making SVG icon libraries for React apps</strong></h3>
@@ -129,7 +133,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\rachel@3x.jpg" alt="Rachel Andrew"></picture>
-        <h2 class="card__orator"> <strong class="card__name">Rachel Andrew</strong></h2>
+        <h2 class="card__name">Rachel<strong>Andrew</strong></h2>
         <p class="card__location">Bristol, UK</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Making Things Better</strong></h3>
@@ -142,7 +146,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\stephen@3x.jpg" alt="Stephen Hay"></picture>
-        <h2 class="card__orator"> <strong class="card__name">Stephen Hay</strong></h2>
+        <h2 class="card__name">Stephen<strong>Hay</strong></h2>
         <p class="card__location">Leeuwarden, NL</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Zero interface thinking</strong></h3>
@@ -155,7 +159,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\paul@3x.jpg" alt="Paul Irish"></picture>
-        <h2 class="card__orator"> <strong class="card__name">Paul Irish</strong></h2>
+        <h2 class="card__name">Paul<strong>Irish</strong></h2>
         <p class="card__location">Palo Alto, CA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Developer Tooling, lighthouse</strong></h3>
@@ -168,7 +172,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\nicole@3x.jpg" alt="Nicole Sullivan"></picture>
-        <h2 class="card__orator"> <strong class="card__name">NicoleSullivan</strong></h2>
+        <h2  class="card__name">Nicole<strong>Sullivan</strong></h2>
         <p class="card__location">San Francisco, CA</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>OOCSS code standards</strong></h3>
@@ -181,7 +185,7 @@
     <section class="speaker_card">
       <picture class="card__pict">
         <img class="card__img" src=".\image\SpeakersPicture\brad@3x.jpg" alt="Brad Frost"></picture>
-        <h2 class="card__orator"> <strong class="card__name">Brad Frost</strong></h2>
+        <h2 class="card__name">Brad<strong>Frost</strong></h2>
         <p class="card__location">Pittsburgh, PA.</p>
         <div class="card_informations">
           <h3 class="card__topic"><strong>Atomic Design</strong></h3>
@@ -194,19 +198,20 @@
   </span>
     <section class="speaker_form">
       <form>
-        <h2>Become speaker</h2>
-        <p>Do you have a topic that you like?
-          Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords
-        </p>
         <div>
+          <h2>Become speaker</h2>
+          <h3>Do you have a topic that you like?</h3>
+          <p class="form_txt">Submit it for the next event by filling out the form below. Do not <strong>forget to specify the subject and the related keywords.</strong></p>
+        </div class="form_input">
+        <div class="form_left">
           <label for="name">Name*</label>
           <input type="text" name="name"  id="name" required>
         </div>
-        <div>
+        <div >
           <label for="mail">Mail*</label>
           <input type="text" name="mail" id="mail" required>
         </div>
-        <div>
+        <div class="form_left">
           <label for="subject">Your Subject*</label>
           <input type="text" name="subject" id="subject" required>
         </div>
