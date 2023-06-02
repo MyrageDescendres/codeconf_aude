@@ -327,6 +327,7 @@ form h2 {
   font-family: "maven_Pro";
   color: #644FE8;
   text-transform: uppercase;
+  font-size: 2.2rem;
   display: grid;
   justify-content: center;
 }
@@ -335,6 +336,7 @@ form h2 {
   display: grid;
   justify-content: center;
   margin: auto;
+  font-size: 1.3rem;
 }
 
 .form_input {
@@ -344,6 +346,14 @@ form h2 {
   justify-content: center;
 }
 
+@media screen and (max-width: 700px) {
+  .form_input {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    justify-content: center;
+  }
+}
 .form_short {
   height: 8rem;
   width: 50rem;
@@ -405,9 +415,6 @@ form h2 {
   display: grid;
   align-items: center;
   justify-content: center;
-}
-.btn_ticket label {
-  order: -1;
 }
 
 :root {

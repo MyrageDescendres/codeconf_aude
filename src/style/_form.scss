@@ -23,6 +23,7 @@ form h2{
   font-family:'maven_Pro';
   color:#644FE8;
   text-transform: uppercase;
+  font-size: 2.2rem;
   display: grid;
   justify-content: center;
 
@@ -31,6 +32,7 @@ form h2{
   display: grid;
   justify-content: center;
   margin: auto;
+  font-size: 1.3rem;
 }
 
 .form_input {
@@ -38,6 +40,15 @@ form h2{
   grid-template-columns: repeat(2,1fr);
   gap: 3rem;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .form_input {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+    justify-content: center;
+  }
 }
 
 .form_short {
@@ -79,7 +90,6 @@ form h2{
   .btn_form {
     font-family: 'maven_Pro';
     font-size: 1.2rem;
-    //padding: 0.3rem;
     border: 2px solid $orange_color;
     color: $orange_color;
     border-radius: 1rem;
@@ -103,10 +113,6 @@ form h2{
   display: grid;
   align-items: center;
   justify-content: center;
-
-  label {
-    order: -1;
-  }
 }
 
 //Skin form
