@@ -6,3 +6,12 @@
 @import "_form.scss";
 @import "_default.scss";
 @import "_normalize.scss";
+
+@media (max-width: 700px) {
+  .speaker_banner_txt{ 
+    display: none;
+  //grid-template-columns: repeat(auto-fit, minmax(2rem, 16rem));
+
+
+  }
+}
