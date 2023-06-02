@@ -10,7 +10,7 @@
   <header>
     <nav>
       <ul class="menu">
-        <li class="menu_logo"><a href="#"><img src="./image/logos/newLogo2023.svg" alt="menu_logo"></a></li>
+        <li class="menu_logo"><a href="#"><img src="./image/logos/oldLogo2023.svg" alt="menu_logo"></a></li>
         <li class="menu_separator"><a href="#">Events</a></li>
         <span class="menu_vBar">|</span>
         <li class="menu_separator"><a href="#">Speakers</a></li>
@@ -198,33 +198,35 @@
   </span>
     <section class="speaker_form">
       <form>
-        <div class="form_txt">
+        <div>
           <h2>Become speaker</h2>
-          <h3>Do you have a topic that you like?</h3>
-          <p>Submit it for the next event by filling out the form below. Do not <strong>forget to specify the subject and the related keywords.</strong></p>
+          <h3 class="form_txt">Do you have a topic that you like?</h3>
+          <p class="form_txt">Submit it for the next event by filling out the form below. Do not <strong>forget to specify the subject and the related keywords.</strong></p>
         </div>
-        <div class="form_left form_input">
-          <label for="name">Name*</label>
-          <input type="text" name="name"  id="name" required>
-        </div>
-        <div >
-          <label for="mail">Mail*</label>
-          <input type="text" name="mail" id="mail" required>
-        </div>
-        <div class="form_left">
-          <label for="subject">Your Subject*</label>
-          <input type="text" name="subject" id="subject" required>
-        </div>
-        <div>
-          <label for="keywords">Keywords*(separate by comma)</label>
-          <input type="text" name="keywords" id="keywords" required>
-        </div>
-          <input type="txt" name="short_details" required placeholder="Short Details*">
-        </fieldset>
-        <div>
-          <input type="submit" value="Send your subject" class="btn_form">
-          <p>or just participate to the present event ...</p>
-        </div>
+          <span class="form_input">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name"  id="name" required>
+            </div>
+            <div>
+              <label for="mail">Mail</label>
+              <input type="text" name="mail" id="mail" required>
+            </div>
+            <div>
+              <label for="subject">Your Subject</label>
+              <input type="text" name="subject" id="subject" required>
+            </div>
+            <div>
+              <label for="keywords">Keywords</label>
+              <input type="text" name="keywords" id="keywords" required>
+            </div>
+          </span>
+            <input type="txt" name="short_details" required placeholder="Short Details*" class="form_short">
+          </fieldset>
+          <div class="form_btn_txt">
+            <input type="submit" value="Send your subject" class="btn_form">
+            <p>or just participate to the present event ...</p>
+          </div>
       </form>
       <div>
         <label for="get_ticket">$199 USD</label>

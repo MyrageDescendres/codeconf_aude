@@ -1,17 +1,23 @@
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 form {
   font-family: 'leaguespartan';
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-content: center;
 }
+
 .speaker_form {
     margin: 0 auto;
     max-width: 50rem;
-    display: grid;
-    grid-template-columns: minmax(15rem, 1fr);
-    gap: 3rem;
+    gap: 4rem;
     padding: 2rem;
     justify-content: center;
-    border: 1px solid rgb(5, 153, 158);
-  }
+    //border: 1px solid rgb(5, 153, 158);
+    }
 
 form h2{
   font-family:'maven_Pro';
@@ -26,10 +32,36 @@ form h2{
   justify-content: center;
   margin: auto;
 }
+
 .form_input {
   display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3rem;
   justify-content: center;
-  max-width: 40rem;
+}
+
+.form_short {
+  height:8rem;
+  width:50rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+}
+.form_btn_txt {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .form_short {
+    height:4rem;
+    width:25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+  }
 }
 
 .btn_form {
@@ -43,6 +75,23 @@ form h2{
   background-color: white;
 }
 
+@media screen and (max-width: 700px) {
+  .btn_form {
+    font-family: 'maven_Pro';
+    font-size: 1.2rem;
+    //padding: 0.3rem;
+    border: 2px solid $orange_color;
+    color: $orange_color;
+    border-radius: 1rem;
+    text-decoration-style: none;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    height:2.5rem;
+    width:15rem;
+  }
+}
+
 .btn_ticket {
   font-family: 'maven_Pro';
   font-size: 1rem;
@@ -51,4 +100,60 @@ form h2{
   text-decoration-style: none;
   background-color: $orange_color;
   padding: 0.7rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    order: -1;
+  }
 }
+
+//Skin form
+:root {
+  --color-active: #F74D1C;
+  --color-default: $black_color;
+  --color-txt-light: #fff;
+  --color-txt-highlight: #DBC9B7;
+  --color-second: #4B436A;
+}
+label {
+  text-transform: capitalize;
+  pointer-events: none;
+  order: -1;
+  color: var(--color-second);
+  transform: translate(0, 1.5rem);
+  transition: all .2s;
+  &::after {
+    content: "*";
+    color: var(--color-active)
+  }
+}
+
+[type="text"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: .4rem 0;
+  box-shadow: inset 0 -4px 0 -3px var(--color-txt-highlight);
+  transition: all .5s;
+  &:focus {
+    box-shadow: inset 0 -5px 0 -3px var(--color-default);
+    & ~ label {
+      opacity: 0;
+    }
+  }}
+
+  label {
+    text-transform: capitalize;
+    pointer-events: none;
+    order: -1;
+    color: var(--color-second);
+    transform: translate(0, 1.5rem);
+    transition: all .2s;
+    &::after {
+      content: "*";
+      color: var(--color-active)
+    }
+  }
+  
