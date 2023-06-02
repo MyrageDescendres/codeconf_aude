@@ -24,14 +24,23 @@ a {
   color: rgb(39, 39, 39);
 }
 
+header input {
+  display: none;
+}
+
+.icon-loop {
+  padding-right: 3rem;
+}
+
 .menu_separator::after {
   border: 1px solid red;
 }
 
-.icon-loop_off {
-  opacity: 0;
+@media (max-width: 700px) {
+  ul li a {
+    display: none;
+  }
 }
-
 @font-face {
   font-family: "maven_Pro";
   src: url("./webfonts/maven_Pro/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
@@ -170,25 +179,29 @@ footer {
   background-color: #343237;
   margin: auto;
   color: #F0EDE8;
-  border: 1px solid rgb(255, 105, 218);
+  justify-content: center;
+  gap: 1rem;
 }
 
-.footer_txt {
+.footer_txt_img {
+  margin-top: 2rem;
   grid-column: 2/6;
   grid-row: 1/1;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer_img {
   grid-row: 3/6;
   min-width: 10rem;
-  max-width: 15rem;
+  max-width: 25rem;
   block-size: auto;
+  justify-content: flex-end;
 }
 
 .footer_sponsor {
-  grid-column: 2/6;
+  grid-column: 2/8;
   grid-row: 2/2;
-  background-color: black;
   border-radius: 1rem;
 }
 
@@ -197,9 +210,10 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  filter: brightness(0) invert(1);
 }
 
-.footer_follow_us {
+f .footer_follow_us {
   grid-column: 2/2;
   grid-row: 3/3;
   display: flex;
@@ -216,6 +230,21 @@ footer {
 
 .footer_copyright {
   grid-column: 2/2;
+}
+
+footer h3 {
+  color: rgb(51, 182, 178);
+  margin-top: 0.2rem;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer li i {
+  font-family: "codeconf";
+  font-size: 2rem;
+  font-style: normal;
 }
 
 /*Speaker_Banner*/
@@ -255,16 +284,42 @@ footer {
   margin-top: 8rem;
 }
 
+/*Media Banner*/
+@media screen and (max-width: 700px) {
+  .speaker_banner {
+    grid-template-columns: repeat auto-fit, 1, 1fr;
+    grid-template-rows: repeat 1, 1fr;
+  }
+  .speaker_banner_txt {
+    display: none;
+  }
+  .speaker_banner_img {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-top: -4rem;
+    margin-left: 5.5rem;
+    margin-block-end: 0rem;
+    min-width: 4rem;
+    width: 15rem;
+    max-width: 20rem;
+  }
+  .speaker_banner_h1 {
+    grid-column: 1/1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    justify-content: center;
+  }
+}
 /*Speaker_Card*/
 .speaker_arianne {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   max-width: 67rem;
-  border: 1px solid rgb(255, 1, 1);
   margin: auto;
   justify-content: start;
   padding-bottom: 1rem;
   padding-top: 1rem;
+  color: #644FE8;
 }
 
 .speaker_section {
@@ -332,6 +387,15 @@ form h2 {
   justify-content: center;
 }
 
+form h3 {
+  font-family: "maven_Pro";
+  color: #644FE8;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  display: grid;
+  justify-content: center;
+}
+
 .form_txt {
   display: grid;
   justify-content: center;
@@ -346,14 +410,6 @@ form h2 {
   justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-  .form_input {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    justify-content: center;
-  }
-}
 .form_short {
   height: 8rem;
   width: 50rem;
@@ -368,25 +424,36 @@ form h2 {
   justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-  .form_short {
-    height: 4rem;
-    width: 25rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    display: grid;
-    justify-content: center;
-  }
-}
 .btn_form {
   font-family: "maven_Pro";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-variant: up;
   font-size: 1rem;
   padding: 0.7rem;
-  border: 2px solid #F74D1C;
+  border: 1.5px solid #F74D1C;
   color: #F74D1C;
-  border-radius: 1rem;
+  border-radius: 2rem;
   text-decoration-style: none;
   background-color: white;
+}
+
+.under_btn {
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.btn_ticket {
+  font-family: "maven_Pro";
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  text-decoration-style: none;
+  background-color: #F74D1C;
+  padding: 0.7rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -403,20 +470,21 @@ form h2 {
     height: 2.5rem;
     width: 15rem;
   }
+  .form_short {
+    height: 5rem;
+    width: 28rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+  }
+  .form_input {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    justify-content: center;
+  }
 }
-.btn_ticket {
-  font-family: "maven_Pro";
-  font-size: 1rem;
-  border: none;
-  border-radius: 1rem;
-  text-decoration-style: none;
-  background-color: #F74D1C;
-  padding: 0.7rem;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
 :root {
   --color-active: #F74D1C;
   --color-default: $black_color;

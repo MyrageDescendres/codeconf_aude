@@ -32,12 +32,38 @@
   font-weight: 100;
   margin-top: 8rem;
 }
+
+/*Media Banner*/
+@media screen and (max-width: 700px) {
+  .speaker_banner {
+  grid-template-columns: repeat (auto-fit, 1, 1fr);
+  grid-template-rows: repeat (1, 1fr); 
+}
+  .speaker_banner_txt {
+    display: none;
+  }
+  .speaker_banner_img {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-top: -4rem;
+    margin-left: 5.5rem;
+    margin-block-end: 0rem;
+    min-width: 4rem;
+    width: 15rem;
+    max-width: 20rem;
+}
+.speaker_banner_h1 {
+  grid-column:1/1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  justify-content: center;
+}
+}
   /*Speaker_Card*/
 .speaker_arianne {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6rem,1fr));
   max-width: 67rem;
-  border: 1px solid rgb(255, 1, 1);
   margin: auto;
   justify-content:start;
   padding-bottom: 1rem;

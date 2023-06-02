@@ -7,25 +7,29 @@ footer {
   background-color: #343237;
   margin: auto;
   color: $txt_color;
-  border: 1px solid rgb(255, 105, 218);
+  justify-content: center;
+  gap:1rem
 }
 
-.footer_txt {
+.footer_txt_img {
+  margin-top: 2rem;
   grid-column: 2/6;
   grid-row: 1/1;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer_img { //en cours d'ajustement
   grid-row: 3/6;
   min-width: 10rem;
-  max-width: 15rem;
+  max-width: 25rem;
   block-size: auto;
+  justify-content: flex-end;
 }
 
 .footer_sponsor {
-  grid-column: 2/6;
+  grid-column: 2/8;
   grid-row: 2/2;
-  background-color: black;
   border-radius: 1rem;
 }
 
@@ -34,7 +38,9 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  filter: brightness(0) invert(1);
 }
+f
 .footer_follow_us {
   grid-column: 2/2;
   grid-row: 3/3;
@@ -54,4 +60,19 @@ footer {
 .footer_copyright {
   grid-column: 2/2;
   //grid-row: 3/3;
+}
+
+footer h3{
+  color: rgb(51, 182, 178);
+  margin-top: 0.2rem;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+footer li i {
+  font-family: 'codeconf';
+  font-size: 2rem;
+  font-style: normal;
 }
